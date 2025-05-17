@@ -1,0 +1,5 @@
+@use './buttonMixin' as but;
+
+.button {
+    @include but.button(48px,48px)
+}

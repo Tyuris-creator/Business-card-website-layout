@@ -1,0 +1,25 @@
+.about {
+    padding: 48px 0 32px 0;
+    align-items:center;
+    &__logo {
+        -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7)); 
+    }
+    &__header {
+        font-size: 6rem;
+        font-weight: 500;
+        letter-spacing: 0.6rem;
+        padding: 32.46px 0 12px 0;
+    }
+    &__descr {
+        font-size: 3.5rem;
+        letter-spacing: 0.35rem;
+        text-indent: 5%;
+        text-align: justify;
+        .indent {
+            text-indent: 5%;
+        }
+    }
+}
+
+
