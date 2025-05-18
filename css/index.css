@@ -12,11 +12,9 @@
 }
 html {
   font-size: 4px;
-  background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
 }
 html body {
   text-align: center;
-  padding-top: 48px;
   width: 100%;
   max-width: 540px;
   font-family: "Roboto";
@@ -26,14 +24,29 @@ html body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
   background-image: url("../images/backgroundMobile.png");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+html body .wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  padding-top: 48px;
+  background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
 }
-html body .container {
+html body .wrapper .container {
   margin: 0 auto;
   width: 100%;
   max-width: 476px;
+}
+@media screen and (max-width: 500px) {
+  html body .wrapper .container {
+    max-width: 368px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html body .wrapper .container {
+    max-width: 315px;
+  }
 }
 
 .about__logo {
@@ -78,12 +91,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(1) {
   width: 106px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(1):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -91,12 +105,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(2) {
   width: 105px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(2):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -104,12 +119,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(3) {
   width: 87px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(3):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -117,12 +133,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(4) {
   width: 108px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(4):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -130,12 +147,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(5) {
   width: 137px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(5):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -143,12 +161,13 @@ html body .container {
 .shop-nav__controls button:nth-of-type(6) {
   width: 143px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .shop-nav__controls button:nth-of-type(6):hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -169,16 +188,18 @@ html body .container {
   height: 68px;
 }
 .form input[type=submit] {
+  text-indent: 0;
   font-size: 4rem;
   letter-spacing: 0.4rem;
   width: 184px;
   height: 48px;
-  border: 4px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
 }
 .form input[type=submit]:hover {
+  transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
@@ -186,7 +207,6 @@ html body .container {
 
 .person__photo {
   width: 100%;
-  height: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

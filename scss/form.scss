@@ -14,6 +14,7 @@
         height: 68px;
     }
     input[type='submit'] {
+        text-indent: 0;
         font-size: 4rem;
         letter-spacing: 0.4rem;
         @include but.button(184px,48px)
