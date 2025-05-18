@@ -7,6 +7,9 @@
         @media (orientation: landscape) {
             max-width: 540px;
         }
+        @media screen and (min-width: 993px) {
+            max-width:1090px;
+        }   
     }
     &__header {
         @include mix.size(6rem);
@@ -14,12 +17,23 @@
         @media (orientation: landscape) {
             padding-top: 24px;
         }
+        @media screen and (min-width: 993px) {
+            padding: 64px 0 26px 0;
+            font-size: 8rem;
+            letter-spacing: 0.8rem;
+            
+        } 
     }
     &__descr {
         font-size: 3.5rem;
         letter-spacing: 0.35rem;
         text-indent: 5%;
         text-align: justify;
+        @media screen and (min-width: 993px) {
+            font-size: 5rem;
+            letter-spacing: 0.5rem;
+            text-indent: 2%;
+        } 
         .indent {
             text-indent: 5%;
         }

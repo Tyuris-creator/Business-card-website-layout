@@ -1,10 +1,15 @@
 @use './buttonMixin' as but;
-
+@use './headerMixin' as mix;
 .form {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
     align-items: center;
+    @media screen and (min-width: 993px) {
+        h2:nth-child(1){
+            @include mix.size(8rem);       
+        } 
+    }
     @media (orientation: landscape) {
         align-items: flex-start;
         flex-direction: row;
@@ -21,12 +26,22 @@
         @media (orientation: landscape) {
             max-width: 276px;
         }
+        @media screen and (min-width: 993px) {
+            max-width: 292px;
+        }
+        
     }
     input:nth-child(4) {
         height: 68px;
         @media (orientation: landscape) {
             max-width: 442px;
         }
+        @media screen and (min-width: 993px) {
+            max-width: 596px;
+        }
+    }
+    .button {
+        width: 100%;
     }
     button[type='submit'] {
         text-indent: 0;
@@ -35,6 +50,10 @@
         @include but.button(184px,48px);
         @media (orientation: landscape) {
             @include but.button(110px,68px);
+        }
+        @media screen and (min-width: 993px) {
+            @include but.button(200px,48px);
+            
         }
     }
 }

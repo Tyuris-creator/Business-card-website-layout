@@ -37,6 +37,13 @@ html body {
     text-align: start;
   }
 }
+@media screen and (min-width: 993px) {
+  html body {
+    max-width: 100%;
+    background-image: url("../images/desktopBackground.png");
+    background-size: cover;
+  }
+}
 html body .wrapper {
   z-index: 10;
   display: flex;
@@ -51,6 +58,12 @@ html body .wrapper {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
   }
 }
+@media screen and (min-width: 993px) {
+  html body .wrapper {
+    row-gap: 64px;
+    padding-top: 114px;
+  }
+}
 html body .wrapper .container {
   margin: 0 auto;
   width: 100%;
@@ -60,6 +73,12 @@ html body .wrapper .container {
   html body .wrapper .container {
     margin: 0 0 0 32px;
     max-width: 564px;
+  }
+}
+@media screen and (min-width: 993px) {
+  html body .wrapper .container {
+    min-width: 1090px;
+    margin: 0 0 0 142px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -83,6 +102,11 @@ html body .wrapper .container {
     max-width: 540px;
   }
 }
+@media screen and (min-width: 993px) {
+  .about__logo {
+    max-width: 1090px;
+  }
+}
 .about__header {
   font-size: 6rem;
   letter-spacing: 0.6rem;
@@ -94,11 +118,25 @@ html body .wrapper .container {
     padding-top: 24px;
   }
 }
+@media screen and (min-width: 993px) {
+  .about__header {
+    padding: 64px 0 26px 0;
+    font-size: 8rem;
+    letter-spacing: 0.8rem;
+  }
+}
 .about__descr {
   font-size: 3.5rem;
   letter-spacing: 0.35rem;
   text-indent: 5%;
   text-align: justify;
+}
+@media screen and (min-width: 993px) {
+  .about__descr {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-indent: 2%;
+  }
 }
 .about__descr .indent {
   text-indent: 5%;
@@ -109,6 +147,14 @@ html body .wrapper .container {
   letter-spacing: 0.6rem;
   font-weight: 500;
   padding-bottom: 12px;
+}
+@media screen and (min-width: 993px) {
+  .shop-nav__header {
+    padding-bottom: 26px;
+    font-size: 8rem;
+    letter-spacing: 0.8rem;
+    font-weight: 500;
+  }
 }
 .shop-nav__controls {
   justify-content: center;
@@ -213,6 +259,92 @@ html body .wrapper .container {
   color: #131510;
   background-color: #4FB5C0;
 }
+@media screen and (min-width: 993px) {
+  .shop-nav__controls button:nth-of-type(1) {
+    width: 113px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(1):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(2) {
+    width: 112px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(2):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(3) {
+    width: 92px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(3):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(4) {
+    width: 115px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(4):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(5) {
+    width: 148px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(5):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(6) {
+    width: 155px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(6):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+}
 @media (orientation: landscape) {
   .shop-nav__controls button:nth-child(4) {
     order: 5;
@@ -227,6 +359,13 @@ html body .wrapper .container {
   flex-direction: column;
   row-gap: 12px;
   align-items: center;
+}
+@media screen and (min-width: 993px) {
+  .form h2:nth-child(1) {
+    font-size: 8rem;
+    letter-spacing: 0.8rem;
+    font-weight: 500;
+  }
 }
 @media (orientation: landscape) {
   .form {
@@ -249,6 +388,11 @@ html body .wrapper .container {
     max-width: 276px;
   }
 }
+@media screen and (min-width: 993px) {
+  .form input {
+    max-width: 292px;
+  }
+}
 .form input:nth-child(4) {
   height: 68px;
 }
@@ -256,6 +400,14 @@ html body .wrapper .container {
   .form input:nth-child(4) {
     max-width: 442px;
   }
+}
+@media screen and (min-width: 993px) {
+  .form input:nth-child(4) {
+    max-width: 596px;
+  }
+}
+.form .button {
+  width: 100%;
 }
 .form button[type=submit] {
   text-indent: 0;
@@ -290,6 +442,22 @@ html body .wrapper .container {
     background-color: #4FB5C0;
   }
 }
+@media screen and (min-width: 993px) {
+  .form button[type=submit] {
+    width: 200px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .form button[type=submit]:hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+}
 
 .person__photo {
   width: 100%;
@@ -302,6 +470,12 @@ html body .wrapper .container {
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+}
+@media screen and (min-width: 993px) {
+  .person__photo {
+    right: 0;
+    max-width: 532px;
   }
 }
 

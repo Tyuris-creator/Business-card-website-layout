@@ -2,11 +2,15 @@
 @use './headerMixin' as mix;
 @use 'sass:list';
 $widths: (106px, 105px, 87px, 108px, 137px, 143px);
-$widthsBiggerScreen: ();
+$widthsBiggerScreen: (113px, 112px, 92px, 115px, 148px, 155px);
 .shop-nav {
     &__header {
         @include mix.size(6rem);
         padding-bottom: 12px;
+        @media screen and (min-width: 993px) {
+            padding-bottom: 26px;
+            @include mix.size(8rem);
+        }
     }
     &__controls {
         justify-content: center;
@@ -28,6 +32,13 @@ $widthsBiggerScreen: ();
                     @include mixin.button(list.nth($widths, $i), 48px); 
                 }
             }
+             @media screen and (min-width: 993px) {
+                @for $i from 1 through list.length($widthsBiggerScreen) {
+                &:nth-of-type(#{$i}) {
+                    @include mixin.button(list.nth($widthsBiggerScreen, $i), 48px); 
+                }
+            }
+            } 
             @media (orientation: landscape) {
                 &:nth-child(4){
                     order: 5;
