@@ -3,11 +3,17 @@
     &__logo {
         width: 100%;
         -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7)); 
+        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+        @media (orientation: landscape) {
+            max-width: 540px;
+        }
     }
     &__header {
         @include mix.size(6rem);
         padding: 32.46px 0 12px 0;
+        @media (orientation: landscape) {
+            padding-top: 24px;
+        }
     }
     &__descr {
         font-size: 3.5rem;

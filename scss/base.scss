@@ -3,6 +3,7 @@
 html {
     font-size: 4px;
     body {
+        margin: 0 auto;
         text-align: center;
         width: 100%;
         max-width: 540px;
@@ -14,16 +15,30 @@ html {
         background-image: url('../images/backgroundMobile.png');
         background-repeat: no-repeat;
         background-size: cover;
+        @media (orientation: landscape) {
+            margin: 0;
+            background-image: url('../images/backgroundTablet.png');
+            background-size: cover;
+            max-width: 992px;
+            text-align: start;
+        }
         .wrapper {
             display: flex;
             flex-direction: column;
             row-gap: 32px;
             padding-top: 48px;
             background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
+            @media (orientation: landscape) {
+                row-gap: 24px;
+            }
             .container {  
                 margin: 0 auto;
                 width: 100%;
                 max-width: 476px;
+                @media (orientation: landscape) {
+                    margin: 0 0 0 32px;
+                    max-width: 564px;
+                }
                 @media screen and (max-width: 500px){
                     max-width: 368px;
                 }

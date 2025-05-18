@@ -1,6 +1,8 @@
 @use './buttonMixin' as mixin;
 @use './headerMixin' as mix;
+@use 'sass:list';
 $widths: (106px, 105px, 87px, 108px, 137px, 143px);
+$widthsBiggerScreen: ();
 .shop-nav {
     &__header {
         @include mix.size(6rem);
@@ -14,12 +16,25 @@ $widths: (106px, 105px, 87px, 108px, 137px, 143px);
         width: 100%;
         max-width: 412px;
         margin: 0 auto;
+        @media (orientation: landscape) {
+            margin: 0;
+            max-width: fit-content;
+            justify-content: start;
+        }
         button {
             letter-spacing: 0.4rem;
-            @for $i from 1 through length($widths) {
+            @for $i from 1 through list.length($widths) {
                 &:nth-of-type(#{$i}) {
-                    @include mixin.button(nth($widths, $i), 48px); 
+                    @include mixin.button(list.nth($widths, $i), 48px); 
                 }
+            }
+            @media (orientation: landscape) {
+                &:nth-child(4){
+                    order: 5;
+                }
+                &:nth-child(5){
+                    order: 6;           
+                 }
             }
         }
     }
