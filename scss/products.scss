@@ -19,7 +19,7 @@ $widths: (106px, 105px, 87px, 108px, 137px, 143px);
             letter-spacing: 0.4rem;
             @for $i from 1 through list.length($widths) {
                 &:nth-of-type(#{$i}) {
-                    @include mixin.button(list.nth($widths, $i), 48px); 
+                    @include mixin.button(list.nth($widths, $i), 48px);
                 }
             }
         }
