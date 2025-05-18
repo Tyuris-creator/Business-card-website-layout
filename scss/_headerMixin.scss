@@ -1,5 +1,0 @@
-@mixin size($fontSize) {
-    font-size: $fontSize;
-    letter-spacing: calc(($fontSize*10)/100);
-    font-weight: 500;
-}
