@@ -29,7 +29,7 @@ $widthsBiggerScreen: (113px, 112px, 92px, 115px, 148px, 155px);
             letter-spacing: 0.4rem;
             @for $i from 1 through list.length($widths) {
                 &:nth-of-type(#{$i}) {
-                    @include mixin.button(list.nth($widths, $i), 48px); 
+                    @include mixin.button(list.nth($widths, $i), 48px);
                 }
             }
              @media screen and (min-width: 993px) {
