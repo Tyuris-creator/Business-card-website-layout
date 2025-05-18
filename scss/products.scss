@@ -1,0 +1,27 @@
+@use './buttonMixin' as mixin;
+@use './headerMixin' as mix;
+@use 'sass:list';
+$widths: (106px, 105px, 87px, 108px, 137px, 143px);
+.shop-nav {
+    &__header {
+        @include mix.size(6rem);
+        padding-bottom: 12px;
+    }
+    &__controls {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        max-width: 412px;
+        margin: 0 auto;
+        button {
+            letter-spacing: 0.4rem;
+            @for $i from 1 through list.length($widths) {
+                &:nth-of-type(#{$i}) {
+                    @include mixin.button(list.nth($widths, $i), 48px);
+                }
+            }
+        }
+    }
+}
