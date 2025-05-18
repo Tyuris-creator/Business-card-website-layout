@@ -11,42 +11,31 @@
   font-weight: 500;
 }
 html {
-  font-size: 4px;
-}
-html body {
-  text-align: center;
-  width: 100%;
-  max-width: 540px;
-  font-family: "Roboto";
-  font-size: 4rem;
-  font-weight: 400;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5019607843);
   background-image: url("../images/backgroundMobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 4px;
 }
-html body .wrapper {
+html body {
+  background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  padding-top: 48px;
-  background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 400;
+}
+html body .wrapper {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 html body .wrapper .container {
   margin: 0 auto;
-  width: 100%;
   max-width: 476px;
-}
-@media screen and (max-width: 500px) {
-  html body .wrapper .container {
-    max-width: 368px;
-  }
-}
-@media screen and (max-width: 375px) {
-  html body .wrapper .container {
-    max-width: 315px;
-  }
 }
 
 .about__logo {
@@ -63,6 +52,7 @@ html body .wrapper .container {
 .about__descr {
   font-size: 3.5rem;
   letter-spacing: 0.35rem;
+  font-weight: 500;
   text-indent: 5%;
   text-align: justify;
 }
@@ -179,9 +169,14 @@ html body .wrapper .container {
   row-gap: 12px;
   align-items: center;
 }
+.form .form__header {
+  font-size: 6rem;
+  letter-spacing: 0.6rem;
+  font-weight: 500;
+}
 .form input {
   text-indent: 12px;
-  width: 100%;
+  width: 100rem;
   height: 40px;
 }
 .form input:nth-child(4) {

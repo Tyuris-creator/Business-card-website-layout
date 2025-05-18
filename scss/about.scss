@@ -10,12 +10,11 @@
         padding: 32.46px 0 12px 0;
     }
     &__descr {
-        font-size: 3.5rem;
-        letter-spacing: 0.35rem;
+        @include mix.size(3.5rem);
         text-indent: 5%;
         text-align: justify;
         .indent {
-            text-indent: 6%;
+            text-indent: 5%;
         }
     }
 }
