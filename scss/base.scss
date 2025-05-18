@@ -4,15 +4,18 @@ html {
     background-image: url('../images/backgroundMobile.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: #FFFFFF;
     font-family: 'Roboto';
     font-size: 4px;
+    height: auto;
      @media screen and (min-width:992px) {
         background-image: url('../images/backgroundTablet.png');
         background-size: cover;
      }
      @media screen and (min-width:1200px) {
         background-image: url('../images/backgroundDesktop.png');
+        background-size: cover;
     }
     body {
         background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
@@ -41,7 +44,9 @@ html {
                 row-gap: 24px;
             }
             @media screen and (min-width:1200px) {
+                
                 margin-top: 114px;
+                margin-right: 53px;
                 row-gap: 64px;
             }
             .container{
