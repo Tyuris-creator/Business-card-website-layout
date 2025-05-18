@@ -23,6 +23,12 @@ html {
             .container{
                 margin: 0 auto;
                 max-width: 476px;
+                @media screen and (max-width:425px){
+                    max-width: 365px;
+                }
+                @media screen and (max-width:320px){
+                    max-width: 300px;
+                }
             }
         }
     }

@@ -37,6 +37,16 @@ html body .wrapper .container {
   margin: 0 auto;
   max-width: 476px;
 }
+@media screen and (max-width: 425px) {
+  html body .wrapper .container {
+    max-width: 365px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body .wrapper .container {
+    max-width: 300px;
+  }
+}
 
 .about__logo {
   width: 100%;
@@ -178,6 +188,11 @@ html body .wrapper .container {
   text-indent: 12px;
   width: 100rem;
   height: 40px;
+}
+@media screen and (max-width: 425px) {
+  .form input {
+    width: 100%;
+  }
 }
 .form input:nth-child(4) {
   height: 68px;
