@@ -7,6 +7,10 @@ html {
     color: #FFFFFF;
     font-family: 'Roboto';
     font-size: 4px;
+     @media screen and (min-width:992px) {
+        background-image: url('../images/backgroundTablet.png');
+        background-size: cover;
+     }
     body {
         background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
         display: flex;
@@ -15,6 +19,13 @@ html {
         font-size: 4rem;
         text-align: center;
         font-weight: 400;
+        @media screen and (min-width:992px){
+            text-align: start;
+            padding-left: 32px;
+            flex-direction: row;
+            justify-content: space-between;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
+        }
         .wrapper {
             margin-top: 48px;
             display: flex;
@@ -29,6 +40,9 @@ html {
                 @media screen and (max-width:320px){
                     max-width: 300px;
                 }
+                 @media screen and (min-width:992px) {
+                    max-width: 564px;
+                 }
             }
         }
     }

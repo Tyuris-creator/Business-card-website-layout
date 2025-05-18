@@ -15,6 +15,10 @@ $widths: (106px, 105px, 87px, 108px, 137px, 143px);
         width: 100%;
         max-width: 412px;
         margin: 0 auto;
+        @media screen and (min-width:992px) {
+            max-width: 100%;
+            justify-content: flex-start;
+        }
         button {
             letter-spacing: 0.4rem;
             @for $i from 1 through list.length($widths) {
