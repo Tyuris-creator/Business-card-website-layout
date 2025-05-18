@@ -48,6 +48,11 @@ html body .wrapper {
   flex-direction: column;
   row-gap: 32px;
 }
+@media screen and (min-width: 992px) {
+  html body .wrapper {
+    row-gap: 10px;
+  }
+}
 html body .wrapper .container {
   margin: 0 auto;
   max-width: 476px;
@@ -78,6 +83,11 @@ html body .wrapper .container {
   letter-spacing: 0.6rem;
   font-weight: 500;
   padding: 32.46px 0 12px 0;
+}
+@media screen and (min-width: 992px) {
+  .about__header {
+    padding: 24px 0 12px 0;
+  }
 }
 .about__descr {
   font-size: 3.5rem;
@@ -210,6 +220,7 @@ html body .wrapper .container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px;
+    padding-bottom: 26px;
   }
 }
 .form .form__header {

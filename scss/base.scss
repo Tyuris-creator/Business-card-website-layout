@@ -31,6 +31,9 @@ html {
             display: flex;
             flex-direction: column;
             row-gap: 32px;
+            @media screen and (min-width:992px) {
+                row-gap: 10px;
+            }
             .container{
                 margin: 0 auto;
                 max-width: 476px;
@@ -40,9 +43,9 @@ html {
                 @media screen and (max-width:320px){
                     max-width: 300px;
                 }
-                 @media screen and (min-width:992px) {
+                @media screen and (min-width:992px) {
                     max-width: 564px;
-                 }
+                }
             }
         }
     }
