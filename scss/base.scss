@@ -11,6 +11,9 @@ html {
         background-image: url('../images/backgroundTablet.png');
         background-size: cover;
      }
+     @media screen and (min-width:1200px) {
+        background-image: url('../images/backgroundDesktop.png');
+    }
     body {
         background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
         display: flex;
@@ -26,13 +29,20 @@ html {
             justify-content: space-between;
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
         }
+        @media screen and (min-width:1200px) {
+            padding-left: 142px;
+        }
         .wrapper {
             margin-top: 48px;
             display: flex;
             flex-direction: column;
             row-gap: 32px;
             @media screen and (min-width:992px) {
-                row-gap: 10px;
+                row-gap: 24px;
+            }
+            @media screen and (min-width:1200px) {
+                margin-top: 114px;
+                row-gap: 64px;
             }
             .container{
                 margin: 0 auto;
@@ -45,6 +55,10 @@ html {
                 }
                 @media screen and (min-width:992px) {
                     max-width: 564px;
+                }
+                @media screen and (min-width:1200px) {
+                    margin: 0;
+                    max-width: 1090px;
                 }
             }
         }

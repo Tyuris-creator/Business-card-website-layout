@@ -19,12 +19,24 @@ $widths: (106px, 105px, 87px, 108px, 137px, 143px);
             max-width: 100%;
             justify-content: flex-start;
         }
+        @media screen and (min-width:1200px) {
+            display: inline;
+            max-width: 1090px
+        }
         button {
             letter-spacing: 0.4rem;
             @for $i from 1 through list.length($widths) {
                 &:nth-of-type(#{$i}) {
                     @include mixin.button(list.nth($widths, $i), 48px);
                 }
+            }
+            @media screen and (min-width:992px) {
+                &:nth-child(4){
+                    order: 5;
+                }
+                &:nth-child(5){
+                    order: 6;           
+                 }
             }
         }
     }

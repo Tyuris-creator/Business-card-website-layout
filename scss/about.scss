@@ -3,13 +3,22 @@
     &__logo {
         width: 100%;
         -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7)); 
+        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+        @media screen and (min-width:992px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width:1200px) {
+            max-width: 1090px;
+        }
     }
     &__header {
         @include mix.size(6rem);
         padding: 32.46px 0 12px 0;
         @media screen and (min-width:992px) {
             padding: 24px 0 12px 0;
+        }
+        @media screen and (min-width:1200px) {
+            padding: 64px 0 26px 0;
         }
     }
     &__descr {
