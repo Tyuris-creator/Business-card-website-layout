@@ -2,7 +2,10 @@
 
 html {
     font-size: 4px;
+    background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
     body {
+        text-align: center;
+        padding-top: 48px;
         width: 100%;
         max-width: 540px;
         font-family: 'Roboto';
@@ -10,12 +13,11 @@ html {
         font-weight: 400;
         color: #FFFFFF;
         text-shadow: 0px 4px 4px #00000080;
-        background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
         background-image: url('../images/backgroundMobile.png');
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        column-gap: 32px;
+        row-gap: 32px;
         .container {  
             margin: 0 auto;
             width: 100%;
