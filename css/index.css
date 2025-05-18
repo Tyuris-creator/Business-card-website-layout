@@ -111,6 +111,7 @@ html body .wrapper .container {
 }
 @media screen and (min-width: 1200px) {
   .about__logo {
+    min-width: 1000px;
     max-width: 1090px;
   }
 }
@@ -489,6 +490,11 @@ html body .wrapper .container {
 .person__photo {
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .person__photo {
+    width: 532px;
+  }
+}
 @media screen and (min-width: 992px) {
   .person {
     align-self: flex-end;
@@ -496,8 +502,7 @@ html body .wrapper .container {
 }
 @media screen and (min-width: 1200px) {
   .person {
-    max-width: 532px;
-    padding-right: 53px;
+    margin-right: 53px;
   }
 }
 

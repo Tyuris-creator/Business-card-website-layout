@@ -1,12 +1,14 @@
 .person {
     &__photo {
         width: 100%;
+        @media screen and (min-width:1200px) {
+            width: 532px;
+        }
     }
     @media screen and (min-width:992px){
         align-self: flex-end;
     }
     @media screen and (min-width:1200px) {
-        max-width: 532px;
-        padding-right: 53px;
+        margin-right: 53px;
     }
 }
