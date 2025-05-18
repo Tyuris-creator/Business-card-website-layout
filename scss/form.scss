@@ -5,23 +5,12 @@
     flex-direction: column;
     row-gap: 12px;
     align-items: center;
-    @media screen and (min-width: 993px) {
-        h2:nth-child(1){
-            @include mix.size(8rem);       
-        } 
-    }
-    @media (orientation: landscape) {
-        align-items: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 12px;
-        h2:nth-child(1){
-            width: 100%;
-        }
-    }
+    .form__header{
+        @include mix.size(6rem);
+    }   
     input {
         text-indent: 12px;
-        width: 100%;
+        width: 100rem;
         height: 40px;
         @media (orientation: landscape) {
             max-width: 276px;

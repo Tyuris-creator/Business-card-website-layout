@@ -25,8 +25,7 @@
         } 
     }
     &__descr {
-        font-size: 3.5rem;
-        letter-spacing: 0.35rem;
+        @include mix.size(3.5rem);
         text-indent: 5%;
         text-align: justify;
         @media screen and (min-width: 993px) {
