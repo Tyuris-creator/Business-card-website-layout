@@ -5,46 +5,25 @@ $widths: (106px, 105px, 87px, 108px, 137px, 143px);
 $widths2: (113px,112px,92px,115px,148px,155px);
 .shop-nav {
     &__header {
-        @include mix.size(6rem);
-        padding-bottom: 12px;
-        @media screen and (min-width:1200px) {
-            @include mix.size(8rem);
-            padding-bottom: 26px;
-        }
+        @include mix.size(8rem);
+        padding-bottom: 26px;
     }
     &__controls {
-        justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        column-gap: 12px;
         width: 100%;
-        max-width: 412px;
-        margin: 0 auto;
-        @media screen and (min-width:992px) {
-            max-width: 100%;
-            justify-content: flex-start;
-        }
-        @media screen and (min-width:1200px) {
-            max-width: 1090px;
-        }
         button {
             letter-spacing: 0.4rem;
-            @for $i from 1 through list.length($widths) {
-                &:nth-of-type(#{$i}) {
-                    @include mixin.button(list.nth($widths, $i), 48px);
-                }
+            &:nth-child(4){
+                order: 5;
             }
-            @media screen and (min-width:992px) {
-                &:nth-child(4){
-                    order: 5;
-                }
-                &:nth-child(5){
-                    order: 6;           
-                }
-                @for $i from 1 through list.length($widths2) {
-                    &:nth-of-type(#{$i}) {
-                        @include mixin.button(list.nth($widths2, $i), 48px);
-                    }
+            &:nth-child(5){
+                order: 6;           
+            }
+            @for $i from 1 through list.length($widths2) {
+                &:nth-of-type(#{$i}) {
+                    @include mixin.button(list.nth($widths2, $i), 48px);
                 }
             }
         }
