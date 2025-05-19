@@ -1,14 +1,4 @@
-.person {
-    &__photo {
-        width: 100%;
-        @media screen and (min-width:1200px) {
-            width: 532px;
-        }
-    }
-    @media screen and (min-width:992px){
-        align-self: flex-end;
-    }
-    @media screen and (min-width:1200px) {
-        margin-right: 53px;
-    }
+.person__photo {
+    min-width: 357px;
+    width: 100%;
 }
