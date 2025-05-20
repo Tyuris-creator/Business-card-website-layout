@@ -84,7 +84,6 @@ html body .background-iamge .bg-color .flex-container .block1 {
 }
 html body .background-iamge .bg-color .flex-container .block2 {
   align-self: flex-end;
-  max-height: 100vh;
   max-width: 532px;
 }
 
@@ -360,6 +359,9 @@ html body .background-iamge .bg-color .flex-container .block2 {
   }
 }
 
+.form {
+  padding-bottom: 20px;
+}
 .form__header {
   padding-bottom: 24px;
 }
@@ -379,6 +381,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   }
 }
 .form__inputs input {
+  text-indent: 12px;
   width: 292px;
   height: 48px;
 }

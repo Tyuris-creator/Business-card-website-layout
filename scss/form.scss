@@ -1,6 +1,7 @@
 @use './buttonMixin' as but;
 @use './headerMixin' as mix;
 .form {
+    padding-bottom: 20px;
     &__header {
         padding-bottom: 24px;
         @media screen and (max-width: 1200px) {
@@ -15,6 +16,7 @@
             justify-content: center;
         }
         input {
+            text-indent: 12px;
             width: 292px;
             height: 48px;
             @media screen and (max-width: 1200px) {
