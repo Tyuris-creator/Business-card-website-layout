@@ -84,6 +84,7 @@ html body .background-iamge .bg-color .flex-container .block1 {
 }
 html body .background-iamge .bg-color .flex-container .block2 {
   align-self: flex-end;
+  max-height: 100vh;
   max-width: 532px;
 }
 
@@ -154,7 +155,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 @media screen and (max-width: 881px) {
   .shop-nav__controls {
@@ -173,7 +174,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(1) {
   width: 113px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -187,7 +188,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(2) {
   width: 112px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -201,7 +202,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(3) {
   width: 92px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -215,7 +216,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(4) {
   width: 115px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -229,7 +230,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(5) {
   width: 148px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -243,7 +244,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .shop-nav__controls button:nth-of-type(6) {
   width: 155px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -258,7 +259,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(1) {
     width: 106px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -272,7 +273,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(2) {
     width: 105px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -286,7 +287,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(3) {
     width: 87px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -300,7 +301,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(4) {
     width: 108px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -314,7 +315,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(5) {
     width: 137px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -328,7 +329,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .shop-nav__controls button:nth-of-type(6) {
     width: 143px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -418,7 +419,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   letter-spacing: 0.4rem;
   width: 184px;
   height: 48px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -433,7 +434,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .form__inputs .form_submit button[type=submit] {
     width: 110px;
     height: 68px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
@@ -450,7 +451,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
   .form__inputs .form_submit button[type=submit] {
     width: 184px;
     height: 48px;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
     cursor: pointer;
