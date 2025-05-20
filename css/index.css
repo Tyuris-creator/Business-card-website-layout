@@ -45,6 +45,7 @@ html body .background-iamge .bg-color .flex-container {
   width: 100%;
   max-width: 1725px;
   min-height: 100vh;
+  margin: 0 auto;
   padding: 114px 0 0 142px;
   display: flex;
   column-gap: 103px;
