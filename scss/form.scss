@@ -9,43 +9,53 @@
     }
     &__inputs {
         display: flex;
-        gap: 12px;
         flex-wrap: wrap;
-        padding-bottom: 12px;
+        gap: 12px;
+        @media screen and (max-width: 881px) {
+            justify-content: center;
+        }
         input {
-            text-indent: 12px;
             width: 292px;
             height: 48px;
             @media screen and (max-width: 1200px) {
-                width: 276px;
+                width: 100%;
+                max-width: 276px;
                 height: 40px;
+            }
+            @media screen and (max-width: 881px) {
+                max-width: 100% !important;       
             }
         }
         input:nth-child(3) {
             height: 108px;
             width: 596px;
             @media screen and (max-width: 1200px) {
-                width: 442px;
+                width: 100%;
+                max-width: 442px;
                 height: 68px;
             }
+
+
         }
         .form_submit {
             width: 100%;
             @media screen and (max-width: 1200px) {
                 width: fit-content;
             }
-        }
-
-        button[type='submit'] {
-            text-indent: 0;
-            font-size: 4rem;
-            letter-spacing: 0.4rem;
-            @include but.button(184px,48px);
-            @media screen and (max-width: 1200px) {
-                @include but.button(110px,68px);
-                font-size: 16px;
+            button[type='submit'] {
+                text-indent: 0;
+                font-size: 4rem;
+                letter-spacing: 0.4rem;
+                @include but.button(184px,48px);
+                @media screen and (max-width: 1200px) {
+                    @include but.button(110px,68px);
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 881px) {
+                    @include but.button(184px,48px);
+                    
+                }
             }
-        }
+        } 
     }
-    
 }

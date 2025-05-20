@@ -58,6 +58,10 @@ html body .background-iamge .bg-color .flex-container {
 @media screen and (max-width: 881px) {
   html body .background-iamge .bg-color .flex-container {
     flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+    padding: 48px 32px 0 32px;
+    text-align: center;
   }
 }
 html body .background-iamge .bg-color .flex-container .block1 {
@@ -70,6 +74,12 @@ html body .background-iamge .bg-color .flex-container .block1 {
   html body .background-iamge .bg-color .flex-container .block1 {
     max-width: 564px;
     row-gap: 24px;
+  }
+}
+@media screen and (max-width: 881px) {
+  html body .background-iamge .bg-color .flex-container .block1 {
+    max-width: 506px;
+    padding: 0 15px 0 15px;
   }
 }
 html body .background-iamge .bg-color .flex-container .block2 {
@@ -100,12 +110,22 @@ html body .background-iamge .bg-color .flex-container .block2 {
     max-width: 540px;
   }
 }
+@media screen and (max-width: 881px) {
+  .about__logo {
+    max-width: 100%;
+  }
+}
 .about__header {
   padding: 64px 0 26px 0;
 }
 @media screen and (max-width: 1200px) {
   .about__header {
     padding: 24px 0px 12px 0px;
+  }
+}
+@media screen and (max-width: 881px) {
+  .about__header {
+    padding: 32.46px 0 12px 0;
   }
 }
 .about__descr {
@@ -135,6 +155,11 @@ html body .background-iamge .bg-color .flex-container .block2 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+@media screen and (max-width: 881px) {
+  .shop-nav__controls {
+    justify-content: center;
+  }
 }
 .shop-nav__controls button {
   letter-spacing: 0.4rem;
@@ -229,6 +254,110 @@ html body .background-iamge .bg-color .flex-container .block2 {
   color: #131510;
   background-color: #4FB5C0;
 }
+@media screen and (max-width: 881px) {
+  .shop-nav__controls button:nth-of-type(1) {
+    width: 106px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(1):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(2) {
+    width: 105px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(2):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(3) {
+    width: 87px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(3):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(4) {
+    width: 108px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(4):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(5) {
+    width: 137px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(5):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-of-type(6) {
+    width: 143px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .shop-nav__controls button:nth-of-type(6):hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+  .shop-nav__controls button:nth-child(1) {
+    order: 1;
+  }
+  .shop-nav__controls button:nth-child(2) {
+    order: 2;
+  }
+  .shop-nav__controls button:nth-child(3) {
+    order: 3;
+  }
+  .shop-nav__controls button:nth-child(4) {
+    order: 4;
+  }
+  .shop-nav__controls button:nth-child(5) {
+    order: 5;
+  }
+  .shop-nav__controls button:nth-child(6) {
+    order: 6;
+  }
+}
 
 .form__header {
   padding-bottom: 24px;
@@ -240,19 +369,28 @@ html body .background-iamge .bg-color .flex-container .block2 {
 }
 .form__inputs {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
-  padding-bottom: 12px;
+  gap: 12px;
+}
+@media screen and (max-width: 881px) {
+  .form__inputs {
+    justify-content: center;
+  }
 }
 .form__inputs input {
-  text-indent: 12px;
   width: 292px;
   height: 48px;
 }
 @media screen and (max-width: 1200px) {
   .form__inputs input {
-    width: 276px;
+    width: 100%;
+    max-width: 276px;
     height: 40px;
+  }
+}
+@media screen and (max-width: 881px) {
+  .form__inputs input {
+    max-width: 100% !important;
   }
 }
 .form__inputs input:nth-child(3) {
@@ -261,7 +399,8 @@ html body .background-iamge .bg-color .flex-container .block2 {
 }
 @media screen and (max-width: 1200px) {
   .form__inputs input:nth-child(3) {
-    width: 442px;
+    width: 100%;
+    max-width: 442px;
     height: 68px;
   }
 }
@@ -273,7 +412,7 @@ html body .background-iamge .bg-color .flex-container .block2 {
     width: fit-content;
   }
 }
-.form__inputs button[type=submit] {
+.form__inputs .form_submit button[type=submit] {
   text-indent: 0;
   font-size: 4rem;
   letter-spacing: 0.4rem;
@@ -284,14 +423,14 @@ html body .background-iamge .bg-color .flex-container .block2 {
   color: #FFFFFF;
   cursor: pointer;
 }
-.form__inputs button[type=submit]:hover {
+.form__inputs .form_submit button[type=submit]:hover {
   transition: background-color 0.6s, border 0.6s, color 0.6s;
   border: 4px solid #6AECF8;
   color: #131510;
   background-color: #4FB5C0;
 }
 @media screen and (max-width: 1200px) {
-  .form__inputs button[type=submit] {
+  .form__inputs .form_submit button[type=submit] {
     width: 110px;
     height: 68px;
     border: 3px solid #FFFFFF;
@@ -300,7 +439,23 @@ html body .background-iamge .bg-color .flex-container .block2 {
     cursor: pointer;
     font-size: 16px;
   }
-  .form__inputs button[type=submit]:hover {
+  .form__inputs .form_submit button[type=submit]:hover {
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    border: 4px solid #6AECF8;
+    color: #131510;
+    background-color: #4FB5C0;
+  }
+}
+@media screen and (max-width: 881px) {
+  .form__inputs .form_submit button[type=submit] {
+    width: 184px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .form__inputs .form_submit button[type=submit]:hover {
     transition: background-color 0.6s, border 0.6s, color 0.6s;
     border: 4px solid #6AECF8;
     color: #131510;

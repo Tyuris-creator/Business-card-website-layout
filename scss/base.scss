@@ -37,6 +37,10 @@ html {
                     }
                     @media screen and (max-width: 881px) {
                         flex-direction: column;
+                        row-gap: 32px;
+                        align-items: center;
+                        padding: 48px 32px 0 32px;
+                        text-align: center;
                     }
                     .block1 {
                         display: flex;
@@ -46,6 +50,10 @@ html {
                         @media screen and (max-width: 1200px) {
                             max-width: 564px;
                             row-gap: 24px;
+                        }
+                        @media screen and (max-width: 881px) {
+                            max-width: 506px;
+                            padding: 0 15px 0 15px; // паддинг безопасности
                         }
                     }      
                     .block2 {

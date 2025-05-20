@@ -7,11 +7,17 @@
         @media screen and (max-width: 1200px) {
             max-width: 540px;
         }
+        @media screen and (max-width: 881px) {
+            max-width: 100%;
+        }
     }
     &__header {
         padding: 64px 0 26px 0;
         @media screen and (max-width: 1200px) {
             padding: 24px 0px 12px 0px;
+        }
+        @media screen and (max-width: 881px) {
+            padding: 32.46px 0 12px 0;
         }
     }
     &__descr {
