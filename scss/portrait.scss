@@ -1,4 +1,8 @@
 .person__photo {
     min-width: 357px;
     width: 100%;
+    @media screen and (max-width: 881px) {
+        min-width: 50px;
+        max-width: 100%;
+    }
 } 

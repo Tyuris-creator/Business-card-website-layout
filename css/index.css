@@ -41,14 +41,17 @@ html body .background-iamge .bg-color {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
   }
 }
+@media screen and (max-width: 881px) {
+  html body .background-iamge .bg-color {
+    background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
+  }
+}
 html body .background-iamge .bg-color .flex-container {
   width: 100%;
-  max-width: 1725px;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 114px 0 0 142px;
+  padding: 114px 53px 0 142px;
   display: flex;
-  column-gap: 103px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1200px) {
   html body .background-iamge .bg-color .flex-container {
@@ -85,7 +88,11 @@ html body .background-iamge .bg-color .flex-container .block1 {
 }
 html body .background-iamge .bg-color .flex-container .block2 {
   align-self: flex-end;
-  max-width: 532px;
+}
+@media screen and (max-width: 881px) {
+  html body .background-iamge .bg-color .flex-container .block2 {
+    margin: 0 auto;
+  }
 }
 
 .header {
@@ -471,6 +478,12 @@ html body .background-iamge .bg-color .flex-container .block2 {
 .person__photo {
   min-width: 357px;
   width: 100%;
+}
+@media screen and (max-width: 881px) {
+  .person__photo {
+    min-width: 50px;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
